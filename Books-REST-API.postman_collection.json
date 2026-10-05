@@ -1,0 +1,13 @@
+{
+  "info": {
+    "name": "Books REST API - Task 3",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {"name":"GET All Books","request":{"method":"GET","url":"http://localhost:3000/books"}},
+    {"name":"GET One Book","request":{"method":"GET","url":"http://localhost:3000/books/1"}},
+    {"name":"POST New Book","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\"title\":\"Clean Code\",\"author\":\"Robert C. Martin\"}"},"url":"http://localhost:3000/books"}},
+    {"name":"PUT Update Book","request":{"method":"PUT","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\"title\":\"Things Fall Apart - Updated\",\"author\":\"Chinua Achebe\"}"},"url":"http://localhost:3000/books/1"}},
+    {"name":"DELETE Book","request":{"method":"DELETE","url":"http://localhost:3000/books/1"}}
+  ]
+}
